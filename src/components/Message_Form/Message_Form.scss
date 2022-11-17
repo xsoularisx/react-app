@@ -1,0 +1,15 @@
+.form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+
+    &__input {
+        box-sizing: border-box;
+        width: 75%;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        width: 25%;
+    }
+}

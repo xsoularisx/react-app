@@ -1,0 +1,25 @@
+.message {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+
+    &__number {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    &__author {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        color: blue;
+    }
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        color: red;
+    }
+}

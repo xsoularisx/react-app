@@ -1,11 +1,15 @@
 import React from 'react';
+import './Message_Item.scss'
 
-function Message_Item(props) {
-    return (
-        <div>
-            <h1>My name is {props.name}, this is my first React App</h1>
-        </div>
-    );
+const Message_Item = function (props) {
+
+  return (
+    <div className='message'>
+      <p className='message__number'>{props.number}.</p>
+      <p className='message__author'>{props.message.author}:</p>
+      <p className='message__text'>{props.message.text}</p>
+    </div>
+  );
 }
 
 export default Message_Item;
