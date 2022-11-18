@@ -6,7 +6,7 @@ import Layout from './components/Layout/Layout';
 function App() {
   return (
     <div className="App">
-      <h1>My name is Albert, this is my first React App</h1>
+      <h1>My name is Albert,<br />this is my first React-App</h1>
       <Layout />
     </div>
   );

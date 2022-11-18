@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './Layout.scss'
 import Message_Form from '../Message_Form/Message_Form';
 import Message_Field from '../Message_Field/Message_Field';
+import Chat_Field from '../Chat_Field/Chat_Field';
 
 const Layout = function () {
 
@@ -29,8 +30,11 @@ const Layout = function () {
   }, [messages]);
 
   return (
-    <div className='layout'>Layout
-      <Message_Field messages={messages} />
+    <div className='layout'>
+      <div className='layout__field'>
+        <Chat_Field />
+        <Message_Field messages={messages} />
+      </div>
       <Message_Form create={createMessage} />
     </div>
   )

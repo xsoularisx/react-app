@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Message_Form.scss'
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const Message_Form = function ({ create }) {
 
@@ -16,19 +18,25 @@ const Message_Form = function ({ create }) {
 
   return (
     <form className='form'>
-      <input
+      <TextField
+        id="outlined-basic"
+        variant="outlined"
+        size="small"
         className='form__input'
         type='text'
         placeholder='enter your message'
+        autoFocus={true}
         value={message.text}
         onChange={event => setMessage({ ...message, author: 'author', text: event.target.value })}
-      ></input>
-      <button
+      ></TextField>
+      <Button
+        variant="outlined"
+        size="medium"
         className='form__button'
         type='submit'
         onClick={addNewMessage}>
         send message
-      </button>
+      </Button>
     </form>
   )
 }
