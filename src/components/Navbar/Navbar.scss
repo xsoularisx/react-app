@@ -1,0 +1,17 @@
+.navbar {
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+    &__item {
+        text-decoration: none;
+    }
+}

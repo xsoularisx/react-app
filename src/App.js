@@ -1,14 +1,23 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate, } from 'react-router-dom';
 import './App.scss';
-import Layout from './components/Layout/Layout';
+import Navbar from './components/Navbar/Navbar';
+import About from './pages/About';
+import Chats from './pages/Chats';
+import Error from './pages/Error';
 
 function App() {
   return (
-    <div className="App">
-      <h1>My name is Albert,<br />this is my first React-App</h1>
-      <Layout />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate replace to='/chats' />} />
+        <Route path='/chats' element={<Chats />} />
+        <Route path='/about' element={<About />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

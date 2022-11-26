@@ -4,17 +4,16 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-
 import ListItemText from '@mui/material/ListItemText';
 
 
 const Chat_Field = function () {
   return (
-    <Box className='chat' sx={{ width: '50%', maxWidth: 300, margin: 0, padding: 0, }}>
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemText primary="Chat №1" />
+    <Box className='chat' sx={{ width: '25%', maxWidth: 300, margin: 0, padding: '10px', }}>
+      <List sx={{ margin: 0, padding: 0, }} className='chat__item'>
+        <ListItem sx={{ margin: 0, padding: 0, }} className='chat__item'>
+          <ListItemButton sx={{ margin: 0, padding: 0, }} className='chat__item'>
+            <ListItemText sx={{ margin: 0, padding: 0, marginBottom: '10px' }} className='chat__item' primary="chat #1" />
           </ListItemButton>
         </ListItem>
       </List>
