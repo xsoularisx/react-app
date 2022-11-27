@@ -6,12 +6,14 @@ import Navbar from './components/Navbar/Navbar';
 import About from './pages/About';
 import Chats from './pages/Chats';
 import Error from './pages/Error';
+import Profile from './pages/Profile';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path='/profile' element={<Profile />} />
         <Route path="/" element={<Navigate replace to='/chats' />} />
         <Route path='/chats' element={<Chats />} />
         <Route path='/about' element={<About />} />
